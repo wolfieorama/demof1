@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # foundation-rails for css
 gem 'foundation-rails'
+# devise for user management
+gem 'devise'
+# active admin for adminpanel management
+gem 'activeadmin', github: 'activeadmin'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
