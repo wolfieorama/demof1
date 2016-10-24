@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First:</strong>
+  <%= @prediction.first %>
+</p>
+
+<p>
+  <strong>Second:</strong>
+  <%= @prediction.second %>
+</p>
+
+<p>
+  <strong>Third:</strong>
+  <%= @prediction.third %>
+</p>
+
+<%= link_to 'Edit', edit_prediction_path(@prediction) %> |
+<%= link_to 'Back', predictions_path %>
