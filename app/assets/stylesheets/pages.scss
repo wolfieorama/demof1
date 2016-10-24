@@ -16,6 +16,9 @@
   background-color: #fff;
   width:100%;
 }
+.right{
+  float:right;
+}
 .right-nav{
   text-align:right;
   margin-top: 20px;
@@ -83,4 +86,16 @@
   margin-right: 40px;
   font-weight: 100;
   text-align: center;
+}
+.zero{
+  opacity: 0;
+}
+.form{
+  border:1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+padding:20px;
+padding-left: 50px;
+margin-left: -20px;
+margin-right: -20px;
+padding-right: 50px;
 }
