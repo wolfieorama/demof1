@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .landing-view{
-  height: 90%;
+  height: 70%;
   background: rgba(255,0,0,0.5);
 }
 .overlay{
@@ -38,4 +38,49 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
   }
+}
+.cent{
+  text-align: center;
+}
+.intro{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 100;
+  padding-top: 60px;
+}
+.mid-intro{
+  margin-top: -20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+}
+.more{
+  border-radius: 50%;
+  padding:10px;
+  border-bottom:1px solid white;
+  border-top:1px solid white;
+  margin-top: 10%;
+  font-weight: 100;
+  font-size: 40px;
+  color: #fff;
+
+  &:hover{
+    color: rgba(255,0,0,0.4);
+    background-color: #fff;
+  }
+}
+.about{
+  padding-top: 12px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 200;
+}
+.about-text{
+  font-size: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 100;
+  text-align: center;
 }
