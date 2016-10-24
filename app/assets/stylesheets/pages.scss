@@ -1,3 +1,41 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.landing-view{
+  height: 90%;
+  background: rgba(255,0,0,0.5);
+}
+.overlay{
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+}
+.logo{
+  margin-top: -14px;
+}
+.white-bg{
+  background-color: #fff;
+  width:100%;
+}
+.right-nav{
+  text-align:right;
+  margin-top: 20px;
+  margin-left: -12px;
+  text-transform: uppercase;
+}
+.nav{
+  display: inline;
+  padding: 10px;
+}
+.nav-links{
+  font-size: 14px;
+  color: red;
+  border-radius: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+
+  &:hover{
+    color:black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
