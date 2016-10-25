@@ -8,5 +8,6 @@ ActiveAdmin.register Prediction do
     column 'Second Position', :second
     column 'Third Position', :third
     column 'Prediction Time', :created_at
+    actions
   end
 end
