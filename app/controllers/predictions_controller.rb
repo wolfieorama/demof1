@@ -25,8 +25,7 @@ class PredictionsController < InheritedResources::Base
   # POST /predictions
   # POST /predictions.json
   def create
-    @prediction = Prediction.new(prediction_params)
-    @current_user = @prediction.user
+    @prediction = current_user.predictions.new(prediction_params)
     respond_to do |format|
       if @prediction.save
         format.html { redirect_to @prediction, notice: 'Prediction was successfully created.' }
@@ -67,7 +66,6 @@ class PredictionsController < InheritedResources::Base
     def set_Prediction
       @prediction = Prediction.find(params[:id])
     end
-  private
 
     def prediction_params
       params.require(:prediction).permit(:first, :second, :third, :user_id)
