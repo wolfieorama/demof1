@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .landing-view{
-  height: 80%;
   background: url(/img/vettle.jpg);
   background-size:cover;
   background-position: center;
@@ -16,7 +15,7 @@
 }
 .white-bg{
   background-color: #fff;
-  width:100%;
+  width:100% !important;
 }
 .right{
   float:right;
@@ -61,6 +60,9 @@
   font-size: 40px;
   font-weight: 100;
 }
+.top{
+  margin-bottom: 8%;;
+}
 .more{
   border-radius: 50%;
   padding:10px;
@@ -83,6 +85,7 @@
   background: linear-gradient(45deg, rgba(39,34,3,1) 0%,rgba(45,39,3,1) 12%,rgba(52,46,4,1) 25%,rgba(35,31,3,1) 39%,rgba(22,20,2,1) 50%,rgba(0,0,0,1) 51%,rgba(9,8,1,1) 60%,rgba(22,20,2,1) 76%,rgba(15,13,1,1) 91%,rgba(9,8,1,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272203', endColorstr='#090801',GradientType=1 );
   color:white;
+  padding-bottom: 60px;
 }
 .about{
   padding-top: 52px;
@@ -110,4 +113,114 @@ padding-left: 50px;
 margin-left: -20px;
 margin-right: -20px;
 padding-right: 50px;
+}
+.menu{
+  display: none;
+}
+
+/*back to top*/
+.go-top {
+  border: 1px solid rgba(255,0,0,0.5);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0.75em;
+  right: 0.5em;
+  text-decoration: none;
+  color: rgba(255,0,0,0.5);
+  background-color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: none;
+  margin: 0;
+  padding: 4px 10px 4px 10px;
+  z-index: 10; }
+
+.go-top:hover {
+  background-color: white;
+  border-color: #353B47;
+  color: #353B47;
+  text-decoration: none; }
+
+.perform{
+  background: url(/img/renault.jpg);
+  background-size: cover;
+  height:500px;
+  background-position: center;
+}
+.perform-title{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgba(255,0,0,0.5);
+}
+.exc-line{
+  margin-top: 50px;
+}
+.excite{
+  font-size: 40px;
+  text-transform: uppercase;
+  color:yellow;
+}
+.btn-predict{
+  margin-top: 100px;
+  margin-left:100px;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: rgb(108,0,23);
+  background: -moz-linear-gradient(45deg, rgba(108,0,23,1) 14%, rgba(108,0,23,1) 14%, rgba(108,0,23,1) 18%, rgba(108,0,23,1) 18%, rgba(108,0,23,1) 19%, rgba(168,2,38,1) 40%, rgba(108,0,23,1) 70%, rgba(108,0,23,1) 73%, rgba(108,0,23,1) 74%, rgba(108,0,23,1) 79%, rgba(108,0,23,1) 79%);
+  background: -webkit-linear-gradient(45deg, rgba(108,0,23,1) 14%,rgba(108,0,23,1) 14%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 19%,rgba(168,2,38,1) 40%,rgba(108,0,23,1) 70%,rgba(108,0,23,1) 73%,rgba(108,0,23,1) 74%,rgba(108,0,23,1) 79%,rgba(108,0,23,1) 79%);
+  background: linear-gradient(45deg, rgba(108,0,23,1) 14%,rgba(108,0,23,1) 14%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 19%,rgba(168,2,38,1) 40%,rgba(108,0,23,1) 70%,rgba(108,0,23,1) 73%,rgba(108,0,23,1) 74%,rgba(108,0,23,1) 79%,rgba(108,0,23,1) 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c0017', endColorstr='#6c0017',GradientType=1 );
+}
+.btn-predict:hover{
+  background: rgb(108,85,0);
+background: -moz-linear-gradient(45deg, rgba(108,85,0,1) 14%, rgba(108,85,0,1) 14%, rgba(108,85,0,1) 18%, rgba(108,85,0,1) 18%, rgba(108,85,0,1) 19%, rgba(169,133,1,1) 40%, rgba(108,85,0,1) 70%, rgba(108,85,0,1) 73%, rgba(108,85,0,1) 74%, rgba(108,85,0,1) 79%, rgba(108,85,0,1) 79%);
+background: -webkit-linear-gradient(45deg, rgba(108,85,0,1) 14%,rgba(108,85,0,1) 14%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 19%,rgba(169,133,1,1) 40%,rgba(108,85,0,1) 70%,rgba(108,85,0,1) 73%,rgba(108,85,0,1) 74%,rgba(108,85,0,1) 79%,rgba(108,85,0,1) 79%);
+background: linear-gradient(45deg, rgba(108,85,0,1) 14%,rgba(108,85,0,1) 14%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 19%,rgba(169,133,1,1) 40%,rgba(108,85,0,1) 70%,rgba(108,85,0,1) 73%,rgba(108,85,0,1) 74%,rgba(108,85,0,1) 79%,rgba(108,85,0,1) 79%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c5500', endColorstr='#6c5500',GradientType=1 );
+}
+@media screen and (max-width:1000px){
+  .white-bg{
+    position: fixed;
+  }
+  .right-nav{
+    overflow: hidden;
+    opacity: 0;
+    height:0px;
+    text-align:right;
+    margin-top: -20px;
+    margin-left: -12px;
+    text-transform: uppercase;
+  }
+  .menu{
+    cursor: pointer;
+    display: block;
+    margin-top: 15px;
+    margin-left: -20px;
+    border:1px solid rgba(255,0,0,0.5);
+    padding:5px;
+    border-radius: 5px;
+    color:black;
+  }
+  .menu:hover{
+    background: rgba(255,0,0,0.5);
+    color: white;
+  }
+  .show-nav{
+    display: block;
+    height:100%;
+    opacity: 1;
+    text-align:right;
+    margin-top: -20px;
+    margin-left: -12px;
+    text-transform: uppercase;
+  }
+  .nav{
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding:5px;
+  }
 }
