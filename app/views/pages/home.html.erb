@@ -33,10 +33,8 @@
       </p>
     </div>
     <div class="large-8 columns">
-      <a class="button btn-predict">
-        <i class="fa fa-flag-checkered" aria-hidden="true"></i>
-        Predict now!
-      </a>
+      <%= link_to " Predict & Win", new_prediction_path, id: "predict-btn", class: "button btn-predict fa fa-flag-checkered", remote: true %>
     </div>
+    <div id="predict-form"></div>
   </div>
 </div>

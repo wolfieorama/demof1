@@ -30,9 +30,11 @@ class PredictionsController < InheritedResources::Base
       if @prediction.save
         format.html { redirect_to @prediction, notice: 'Prediction was successfully created.' }
         format.json { render :show, status: :created, location: @prediction }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @prediction.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
