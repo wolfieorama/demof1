@@ -8,7 +8,7 @@ $(document).ready(function(){
       $(".right-nav").toggleClass("show-nav", 1000, "easeOutSine");
     });
   });
-})
+});
 // Back to top!!
 $(document).ready(function() {
   function checkPosition() {
@@ -30,17 +30,17 @@ $(document).ready(function() {
 });
 
 // scroll down with ease!!
-   $(function() {
- $('a[href*=#]:not([href=#])').click(function() {
-   if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-     var target = $(this.hash);
-     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-     if (target.length) {
-       $('html,body').animate({
-         scrollTop: target.offset().top
-       }, 1000);
-       return false;
-     }
-   }
- });
+$(function() {
+  $('a[href*=\\#]:not([href=\\#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
