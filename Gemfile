@@ -27,6 +27,9 @@ gem 'foundation-rails'
 gem 'devise'
 # active admin for adminpanel management
 gem 'activeadmin', github: 'activeadmin'
+#for easy select in active admin
+gem 'select2-rails'
+gem 'activeadmin-select2', github: 'mfairburn/activeadmin-select2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

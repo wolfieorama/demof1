@@ -13,17 +13,18 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :first %><br>
-      <%= f.text_field :first %>
+      <%= f.label :First %><br>
+      <%= f.collection_select(:first, Driver.all, :id, :driver_name, include_blank: true ) %>
     </div>
     <div class="field">
-      <%= f.label :second %><br>
-      <%= f.text_field :second %>
+      <%= f.label :Second %><br>
+      <%= f.collection_select(:second, Driver.all, :id, :driver_name, include_blank: true) %>
     </div>
     <div class="field">
-      <%= f.label :third %><br>
-      <%= f.text_field :third %>
+      <%= f.label :Third %><br>
+      <%= f.collection_select(:third, Driver.all, :id, :driver_name, include_blank: true) %>
     </div>
+    <br>
     <div class="actions">
       <%= f.submit %>
     </div>
