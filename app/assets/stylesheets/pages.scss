@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .landing-view{
-  height: 80%;
   background: url(/img/vettle.jpg);
   background-size:cover;
   background-position: center;
@@ -16,7 +15,7 @@
 }
 .white-bg{
   background-color: #fff;
-  width:100%;
+  width:100% !important;
 }
 .right{
   float:right;
@@ -60,6 +59,9 @@
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 100;
+}
+.top{
+  margin-bottom: 8%;;
 }
 .more{
   border-radius: 50%;
@@ -110,4 +112,49 @@ padding-left: 50px;
 margin-left: -20px;
 margin-right: -20px;
 padding-right: 50px;
+}
+.menu{
+  display: none;
+}
+@media screen and (max-width:1000px){
+  .white-bg{
+    position: fixed;
+  }
+  .right-nav{
+    overflow: hidden;
+    opacity: 0;
+    height:0px;
+    text-align:right;
+    margin-top: -20px;
+    margin-left: -12px;
+    text-transform: uppercase;
+  }
+  .menu{
+    cursor: pointer;
+    display: block;
+    margin-top: 15px;
+    margin-left: -20px;
+    border:1px solid rgba(255,0,0,0.5);
+    padding:5px;
+    border-radius: 5px;
+    color:black;
+  }
+  .menu:hover{
+    background: rgba(255,0,0,0.5);
+    color: white;
+  }
+  .show-nav{
+    display: block;
+    height:100%;
+    opacity: 1;
+    text-align:right;
+    margin-top: -20px;
+    margin-left: -12px;
+    text-transform: uppercase;
+  }
+  .nav{
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding:5px;
+  }
 }
