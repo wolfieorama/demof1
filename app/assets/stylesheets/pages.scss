@@ -116,6 +116,30 @@ padding-right: 50px;
 .menu{
   display: none;
 }
+
+/*back to top*/
+.go-top {
+  border: 1px solid rgba(255,0,0,0.5);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0.75em;
+  right: 0.5em;
+  text-decoration: none;
+  color: rgba(255,0,0,0.5);
+  background-color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: none;
+  margin: 0;
+  padding: 4px 10px 4px 10px;
+  z-index: 10; }
+
+.go-top:hover {
+  background-color: white;
+  border-color: #353B47;
+  color: #353B47;
+  text-decoration: none; }
+
 @media screen and (max-width:1000px){
   .white-bg{
     position: fixed;
