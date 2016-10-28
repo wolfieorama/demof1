@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  $("#predictions_first").select2({
+  $("#prediction_first").select2({
     theme: "classic"
   });
-  $("#predictions_second").select2({
+  $("#prediction_second").select2({
     theme: "classic"
   });
-  $("#predictions_third").select2({
+  $("#prediction_third").select2({
     theme: "classic"
   });
 });
