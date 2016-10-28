@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  race_name: MyString
+  race_date: 2016-10-28 18:07:28
+  start_time: 2016-10-28 18:07:28
+  track: MyString
+
+two:
+  race_name: MyString
+  race_date: 2016-10-28 18:07:28
+  start_time: 2016-10-28 18:07:28
+  track: MyString
