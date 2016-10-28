@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161024162007) do
+ActiveRecord::Schema.define(version: 20161028100000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,12 @@ ActiveRecord::Schema.define(version: 20161024162007) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "drivers", force: :cascade do |t|
+    t.string   "driver_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "predictions", force: :cascade do |t|
     t.string   "first"
     t.string   "second"
@@ -51,7 +57,20 @@ ActiveRecord::Schema.define(version: 20161024162007) do
     t.integer  "user_id"
   end
 
+  create_table "signed_drivers", force: :cascade do |t|
+    t.integer  "driver_id"
+    t.integer  "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "subjects", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string   "team_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
