@@ -85,6 +85,7 @@
   background: linear-gradient(45deg, rgba(39,34,3,1) 0%,rgba(45,39,3,1) 12%,rgba(52,46,4,1) 25%,rgba(35,31,3,1) 39%,rgba(22,20,2,1) 50%,rgba(0,0,0,1) 51%,rgba(9,8,1,1) 60%,rgba(22,20,2,1) 76%,rgba(15,13,1,1) 91%,rgba(9,8,1,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272203', endColorstr='#090801',GradientType=1 );
   color:white;
+  padding-bottom: 60px;
 }
 .about{
   padding-top: 52px;
@@ -140,6 +141,47 @@ padding-right: 50px;
   color: #353B47;
   text-decoration: none; }
 
+.perform{
+  background: url(/img/renault.jpg);
+  background-size: cover;
+  height:500px;
+  background-position: center;
+}
+.perform-title{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgba(255,0,0,0.5);
+}
+.exc-line{
+  margin-top: 50px;
+}
+.excite{
+  font-size: 40px;
+  text-transform: uppercase;
+  color:yellow;
+}
+.btn-predict{
+  margin-top: 100px;
+  margin-left:100px;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: rgb(108,0,23);
+  background: -moz-linear-gradient(45deg, rgba(108,0,23,1) 14%, rgba(108,0,23,1) 14%, rgba(108,0,23,1) 18%, rgba(108,0,23,1) 18%, rgba(108,0,23,1) 19%, rgba(168,2,38,1) 40%, rgba(108,0,23,1) 70%, rgba(108,0,23,1) 73%, rgba(108,0,23,1) 74%, rgba(108,0,23,1) 79%, rgba(108,0,23,1) 79%);
+  background: -webkit-linear-gradient(45deg, rgba(108,0,23,1) 14%,rgba(108,0,23,1) 14%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 19%,rgba(168,2,38,1) 40%,rgba(108,0,23,1) 70%,rgba(108,0,23,1) 73%,rgba(108,0,23,1) 74%,rgba(108,0,23,1) 79%,rgba(108,0,23,1) 79%);
+  background: linear-gradient(45deg, rgba(108,0,23,1) 14%,rgba(108,0,23,1) 14%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 18%,rgba(108,0,23,1) 19%,rgba(168,2,38,1) 40%,rgba(108,0,23,1) 70%,rgba(108,0,23,1) 73%,rgba(108,0,23,1) 74%,rgba(108,0,23,1) 79%,rgba(108,0,23,1) 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c0017', endColorstr='#6c0017',GradientType=1 );
+}
+.btn-predict:hover{
+  background: rgb(108,85,0);
+background: -moz-linear-gradient(45deg, rgba(108,85,0,1) 14%, rgba(108,85,0,1) 14%, rgba(108,85,0,1) 18%, rgba(108,85,0,1) 18%, rgba(108,85,0,1) 19%, rgba(169,133,1,1) 40%, rgba(108,85,0,1) 70%, rgba(108,85,0,1) 73%, rgba(108,85,0,1) 74%, rgba(108,85,0,1) 79%, rgba(108,85,0,1) 79%);
+background: -webkit-linear-gradient(45deg, rgba(108,85,0,1) 14%,rgba(108,85,0,1) 14%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 19%,rgba(169,133,1,1) 40%,rgba(108,85,0,1) 70%,rgba(108,85,0,1) 73%,rgba(108,85,0,1) 74%,rgba(108,85,0,1) 79%,rgba(108,85,0,1) 79%);
+background: linear-gradient(45deg, rgba(108,85,0,1) 14%,rgba(108,85,0,1) 14%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 18%,rgba(108,85,0,1) 19%,rgba(169,133,1,1) 40%,rgba(108,85,0,1) 70%,rgba(108,85,0,1) 73%,rgba(108,85,0,1) 74%,rgba(108,85,0,1) 79%,rgba(108,85,0,1) 79%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c5500', endColorstr='#6c5500',GradientType=1 );
+}
 @media screen and (max-width:1000px){
   .white-bg{
     position: fixed;
