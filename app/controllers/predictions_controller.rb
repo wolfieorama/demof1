@@ -70,6 +70,6 @@ class PredictionsController < InheritedResources::Base
     end
 
     def prediction_params
-      params.require(:prediction).permit(:first, :second, :third, :user_id)
+      params.require(:prediction).permit(:first, :second, :third, :user_id, :race_id)
     end
 end

@@ -14,7 +14,7 @@
   <body>
     <!-- top page -->
   <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
-  
+
     <div class="row white-bg">
       <div class="large-3 columns">
         <img class="logo" src="/img/logos/choicesf1.png" alt="logo" height="120px" width="120px;">
@@ -27,11 +27,11 @@
             <%if current_user.super_admin? %>
               <li class="nav"><%= link_to "Admin Panel", admin_root_path, class: "nav-links" %></li>
             <% end %>
-            <li class="nav"><%= link_to current_user.email, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Profile", edit_user_registration_path, class: "nav-links" %></li>
             <li class="nav" ><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-links" %></li>
         <% else %>
-            <li class="nav"><%= link_to "Sign up",  new_user_registration_path, class: "nav-links" %></li>
-            <li class="nav"><%= link_to "Sign in",  new_user_session_path, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Join",  new_user_registration_path, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Log in",  new_user_session_path, class: "nav-links" %></li>
         <% end %>
       </div>
     </div>
