@@ -22,16 +22,16 @@
       </div>
         <div class="large-9 columns right-nav">
           <li class="nav"><%= link_to "Home", root_path, class: "nav-links" %></li>
-          <li class="nav"><%= link_to 'Predict & Win', new_prediction_path, class: "nav-links" %></li>
+          <li class="nav"><a class="nav-links" href="#predict">Predict && Win</a></li>
           <% if user_signed_in? %>
             <%if current_user.super_admin? %>
               <li class="nav"><%= link_to "Admin Panel", admin_root_path, class: "nav-links" %></li>
             <% end %>
-            <li class="nav"><%= link_to current_user.email, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Profile", edit_user_registration_path, class: "nav-links" %></li>
             <li class="nav" ><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-links" %></li>
         <% else %>
-            <li class="nav"><%= link_to "Sign up",  new_user_registration_path, class: "nav-links" %></li>
-            <li class="nav"><%= link_to "Sign in",  new_user_session_path, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Join",  new_user_registration_path, class: "nav-links" %></li>
+            <li class="nav"><%= link_to "Log in",  new_user_session_path, class: "nav-links" %></li>
         <% end %>
       </div>
     </div>
