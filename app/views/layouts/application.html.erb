@@ -22,7 +22,7 @@
       </div>
         <div class="large-9 columns right-nav">
           <li class="nav"><%= link_to "Home", root_path, class: "nav-links" %></li>
-          <li class="nav"><a class="nav-links" href="#predict">Predict && Win</a></li>
+          <li class="nav"><%= link_to "Predict && Win", new_prediction_path, class: "nav-links" %></li>
           <% if user_signed_in? %>
             <%if current_user.super_admin? %>
               <li class="nav"><%= link_to "Admin Panel", admin_root_path, class: "nav-links" %></li>
