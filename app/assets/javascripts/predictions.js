@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $("#prediction_first").select2({
     theme: "classic"
   });
